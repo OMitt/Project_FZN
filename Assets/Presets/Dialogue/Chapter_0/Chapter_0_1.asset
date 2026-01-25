@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_0_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 1
+    text: "\u201CDid you hear how Steve died?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\"Don't say a word.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CThe creature could <color=red>change its shape</color>.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CIt hid among civilians before attacking.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CCreepy, huh?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CI quit.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CCome on.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CWe\u2019ll finish the <color=red>autopsy report</color> in thirty
+      minutes.\u201D"
+    triggerEvents:
+    - triggerEventType: 0
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+    sounds: []
+  - speaker: 1
+    text: "\u201CAfter that, it isn\u2019t our problem anymore.\u201D"
+    triggerEvents:
+    - triggerEventType: 0
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+    sounds: []
+  triggerEventStructs: []

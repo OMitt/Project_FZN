@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_0_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 3
+    text: "\u201C\u2026With police intervention, the emergency at Seagull Square
+      has been contained.\u201D"
+    triggerEvents:
+    - triggerEventType: 16
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 3202587578603631312, guid: eb6c98942f0eafd4592a019bb29e1d7d, type: 3}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    sounds: []
+  - speaker: 3
+    text: "\u201CThe <color=red>unidentified creature</color> has been confirmed
+      neutralized.\u201D"
+    triggerEvents:
+    - triggerEventType: 16
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 8159641601997133473, guid: f670d73deb65b0a49829b58629785031, type: 3}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    sounds: []
+  - speaker: 3
+    text: "\u201CA <color=red>police officer</color> was killed in the attack. No
+      civilian casualties.\u201D"
+    triggerEvents:
+    - triggerEventType: 16
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 19100707282886116, guid: 1ec72fe42bc984f4e89d222a53a3a469, type: 3}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    sounds: []
+  - speaker: 3
+    text: "\u201CThe police urge everyone to stay calm and avoid panic\u2026\u201D"
+    triggerEvents:
+    - triggerEventType: 16
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: -6913078993878596923, guid: 1e64087c0de712b4f852418b155f95a1, type: 3}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 20
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+    sfxID: 
+    enableAmbient: 0
+  - triggerEventType: 19
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+    sfxID: TVEnd_0
+    enableAmbient: 0
+  - triggerEventType: 1
+    nextChapterID: 0_1
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+    sfxID: 
+    enableAmbient: 0

@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &30609336582108122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5526146824710491097}
+  - component: {fileID: 8859877518042296462}
+  - component: {fileID: 1058398188693140185}
+  - component: {fileID: 4576733694502453455}
+  - component: {fileID: 7125171382921660248}
+  - component: {fileID: 5656559801693477613}
+  - component: {fileID: 9088258335948501056}
+  - component: {fileID: 1872934563696346236}
+  m_Layer: 0
+  m_Name: GameLoopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5526146824710491097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.94376, y: 0.26691, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8859877518042296462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8737cfe451b3a4db1df17050ea6b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameController
+  allChapters:
+  - id: 0_0
+    chapter: {fileID: 1058398188693140185}
+  - id: 0_1
+    chapter: {fileID: 4576733694502453455}
+  - id: 1_0
+    chapter: {fileID: 7125171382921660248}
+  - id: 2_0
+    chapter: {fileID: 5656559801693477613}
+  - id: 3_0
+    chapter: {fileID: 9088258335948501056}
+  - id: BadEnd
+    chapter: {fileID: 1872934563696346236}
+  startChapterID: 0_0
+--- !u!114 &1058398188693140185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d4f213e9631974d966d8bf0e4e4a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_0
+  chapter0StartDialogue: {fileID: 11400000, guid: d51d1a8e4162ba447876480d6b0deac7, type: 2}
+--- !u!114 &4576733694502453455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc59fd86d9419542bdbc4f926212749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_0_1
+  StartDialogue: {fileID: 11400000, guid: 487ff0b75381df74f80bf1e8fee517df, type: 2}
+--- !u!114 &7125171382921660248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6e2da053d5e3b428d85487b1ecd00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_1_0
+  StartDialogue: {fileID: 11400000, guid: 4b6a9008b419dc34c9d8500d8cafe5de, type: 2}
+--- !u!114 &5656559801693477613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d850bda003899004aa879f7bd57be23c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_2_0
+  StartDialogue: {fileID: 11400000, guid: f317e09e6c9e4c244ad43b7fd3c67388, type: 2}
+  ThisChaptersConclusion: {fileID: 11400000, guid: 692f84287a88dd948bbb0886e2d0f309, type: 2}
+--- !u!114 &9088258335948501056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e014e97ee8864042a96b291588d709a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_3_0
+  StartDialogue: {fileID: 11400000, guid: 598a4a5071ee3ec4cbd74295b248f8db, type: 2}
+  ThisChaptersConclusion: {fileID: 11400000, guid: cef09c03cc2ba634f9f4673689b6440f, type: 2}
+--- !u!114 &1872934563696346236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30609336582108122}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af35fbcef9aa404f9f5eea7f8e91066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chapter_BadEnd

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_1_1_2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 1
+    text: "\u201C\u2026Another body.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CThat\u2019s impossible.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CThey look exactly the same!\u201D"
+    triggerEvents: []
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 3
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 1
+    selections: {fileID: 11400000, guid: db79a58c1519cbc409d14f848eb806d5, type: 2}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0

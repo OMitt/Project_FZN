@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_1_6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 0
+    text: "Just as you\u2019re about to deal with the disguised corpse, the room
+      suddenly plunges into darkness again."
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: You hear a strange, wet slithering sound somewhere in the room.
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CAssistant... Was that you talking?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CWhat? I thought that was you.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: Five seconds pass in tense silence. Then, the power flickers back on.
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 02000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+    sounds: []
+  - speaker: 0
+    text: ..........
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 00000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+    sounds: []
+  - speaker: 0
+    text: ......
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 00000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+    sounds: []
+  - speaker: 0
+    text: ...
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 01000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 1
+    nextChapterID: 2_0
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 02000000
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0

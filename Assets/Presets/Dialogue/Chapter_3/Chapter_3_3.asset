@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_3_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 0
+    text: "You lunge at the assistant\u2014"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "Caught off guard, she doesn\u2019t react in time."
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: You plunge the knife into her chest.
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CHow could this be!!!!\u201D"
+    triggerEvents:
+    - triggerEventType: 8
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 5
+      unlockConditionID: 0
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    - triggerEventType: 9
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 5
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    - triggerEventType: 19
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: Body_0
+      enableAmbient: 0
+    sounds: []
+  - speaker: 0
+    text: "It\u2019s over."
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: You turn the knife handle several times.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: The assistant collapses.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "You burn the assistant\u2019s body."
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: You escape from the morgue.
+    triggerEvents:
+    - triggerEventType: 4
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: Outside
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    - triggerEventType: 10
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: Outside
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    - triggerEventType: 13
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: Outside
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    - triggerEventType: 13
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: Outside
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+    sounds: []
+  - speaker: 1
+    text: "\u201C...........\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: The wind is cold.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: So you wrap your coat tighter.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: Everything is over...
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: But after enduring such unspeakable terror,
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: Can you ever return to a normal life?
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "You know\u2026 you will live forever in the horror of this freezing night."
+    triggerEvents: []
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 14
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+    sfxID: 
+    enableAmbient: 0

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad63daa8989a284681486ce79a288af, type: 3}
+  m_Name: UnlockEvent_CH2_B1_Clue3To4 Save
+  m_EditorClassIdentifier: Assembly-CSharp::UnlockEventSetting
+  id: 1
+  unlockConditions:
+  - id: 0
+    isUnlocked: 0
+  triggerEvents:
+  - triggerEventType: 17
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: C2_B1_3
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+  - triggerEventType: 17
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: C2_B1_4
+    enableConclusion: 1
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0
+  isUnlocked: 0

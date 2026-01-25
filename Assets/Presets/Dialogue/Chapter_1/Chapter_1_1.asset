@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_1_1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 0
+    text: The lights flicker twice, then the room falls into darkness again.
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 0000000001000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+    sounds: []
+  - speaker: 2
+    text: "\u201C...Didn\u2019t they fix the light last week?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CThey have to do it all again.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: The power comes back on.
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 02000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+    sounds: []
+  - speaker: 1
+    text: "\u201COh, hello, body.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CWell, take the <color=red>police profile</color>.\u201D"
+    triggerEvents:
+    - triggerEventType: 13
+      nextChapterID: 
+      enableReport: 1
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+    - triggerEventType: 2
+      nextChapterID: 
+      enableReport: 1
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+    sounds: []
+  - speaker: 2
+    text: "\u201CThe deceased: Steve, age 30. Killed in 1 hour.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CYeah\u2026 I met him a couple of times.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CHe is Steve.\""
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CWait, there\u2019s something on the right.\u201D"
+    triggerEvents: []
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 7
+    nextChapterID: 
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 1
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0
+    targetLevelIndex: 0
+    targetSprite: {fileID: 0}
+    DontUseBlackEffect: 0

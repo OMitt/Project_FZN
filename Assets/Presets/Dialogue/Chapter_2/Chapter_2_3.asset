@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_2_3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 0
+    text: "The moment you lift the scalpel\u2014"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: The lights go out again.
+    triggerEvents:
+    - triggerEventType: 6
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 01000000
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+    sounds: []
+  - speaker: 1
+    text: "\u201CAh... come on!\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "You reach out, trying to grab your assistant, but there\u2019s nothing
+      there."
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: You stumble back a few steps, waiting for the power to return.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: ..........
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: ......
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "\u2026"
+    triggerEvents: []
+    sounds: []
+  triggerEventStructs:
+  - triggerEventType: 1
+    nextChapterID: 3_0
+    enableReport: 0
+    enableSelection: 0
+    selections: {fileID: 0}
+    targetSceneID: 
+    targetDialogue: {fileID: 0}
+    VFXs: 
+    enablePortals: 0
+    unlockEventID: 
+    unlockConditionID: 
+    enableConclusion: 0

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cef60aa08c571644a0553e572b6bb16, type: 3}
+  m_Name: Chapter_3_0
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
+  nextDialogue: {fileID: 0}
+  dialogues:
+  - speaker: 0
+    text: When the lights come back on, the two corpses have fused together.
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: "You feel there\u2019s no way to separate them now."
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CThat was terrifying \u2014 where did you go when the power went
+      out?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 0
+    text: She looks a little angry.
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CI nearly thought I was a goner.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CUh... sorry.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CI backed into the corner.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201C...Alright, what do we do now?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CCan you separate them?\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 1
+    text: "\u201CI have no idea.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CThen you know what to do.\u201D"
+    triggerEvents: []
+    sounds: []
+  triggerEventStructs: []

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 05d4f213e9631974d966d8bf0e4e4a05
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - chapter0StartDialogue: {fileID: 11400000, guid: d51d1a8e4162ba447876480d6b0deac7, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
