@@ -412,6 +412,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2334795110626264073, guid: ff80b7ba8331ce746888b4268b015685, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5360987891086344459, guid: ff80b7ba8331ce746888b4268b015685, type: 3}
       propertyPath: m_Camera
       value: 
@@ -419,6 +423,10 @@ PrefabInstance:
     - target: {fileID: 5614615131750082602, guid: ff80b7ba8331ce746888b4268b015685, type: 3}
       propertyPath: m_Name
       value: ScreenVisualManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5614615131750082602, guid: ff80b7ba8331ce746888b4268b015685, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -622,6 +630,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1072193885}
+    - target: {fileID: 2491571263692964446, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.09008789
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516356537582722277, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2910259697059856771, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486340360504246373, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8836897659950882888, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -739,6 +767,10 @@ PrefabInstance:
     - target: {fileID: 30609336582108122, guid: 452c90ea42b90854cb65f480f9571e19, type: 3}
       propertyPath: m_Name
       value: GameLoopManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 30609336582108122, guid: 452c90ea42b90854cb65f480f9571e19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5526146824710491097, guid: 452c90ea42b90854cb65f480f9571e19, type: 3}
       propertyPath: m_LocalPosition.x

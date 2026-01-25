@@ -107,7 +107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1061.9999, y: -539.99994}
+  m_AnchoredPosition: {x: -1061.9999, y: -540}
   m_SizeDelta: {x: 956, y: 956}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &2339463062874917267
@@ -183,7 +183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 313, y: -539.99994}
+  m_AnchoredPosition: {x: 313, y: -540}
   m_SizeDelta: {x: 2048, y: 545}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &2658443898071512705
@@ -370,6 +370,7 @@ GameObject:
   - component: {fileID: 1676178865054669245}
   - component: {fileID: 8425157814926332093}
   - component: {fileID: 8058709960613900917}
+  - component: {fileID: 329525625090593179}
   m_Layer: 5
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -483,6 +484,19 @@ MonoBehaviour:
   youPortrait: {fileID: -7854551316141353551, guid: cd9f0eda6488ea04eb337008f50d2f24, type: 3}
   assistantPortrait: {fileID: 2798852027769772122, guid: 302fd0b5cfeacfe4c8583b1ddd76fe4a, type: 3}
   broadcastPortrait: {fileID: 4219788010747289006, guid: ccb28d0c844202045a892d38f4ffc51e, type: 3}
+--- !u!114 &329525625090593179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508914829805690607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bada2bac7315b45bf4a7ae6d04c968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DebugTools
+  targetCanvas: {fileID: 3663744103071684363}
 --- !u!1 &3733965490597643435
 GameObject:
   m_ObjectHideFlags: 0
