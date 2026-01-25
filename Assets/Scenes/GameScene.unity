@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1072193885}
+    - target: {fileID: 2100630899515147511, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2491571263692964446, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.09008789
@@ -642,9 +646,37 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2976832813240500861, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -357.50003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300685929482738309, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4526882578599849070, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008677552460804885, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5072122259886962357, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386831435757752760, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7486340360504246373, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700625160941483368, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -160
       objectReference: {fileID: 0}
     - target: {fileID: 8836897659950882888, guid: 7c9b47ce5fff62646b27940ef8e7d871, type: 3}
       propertyPath: m_IsActive
@@ -666,6 +698,10 @@ PrefabInstance:
     - target: {fileID: 3508914829805690607, guid: 53d0db892537b6840ae804d6d8d4d7ab, type: 3}
       propertyPath: m_Name
       value: DialogueManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508914829805690607, guid: 53d0db892537b6840ae804d6d8d4d7ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3663744103071684363, guid: 53d0db892537b6840ae804d6d8d4d7ab, type: 3}
       propertyPath: m_Camera
