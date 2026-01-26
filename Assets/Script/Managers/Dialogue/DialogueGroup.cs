@@ -41,6 +41,7 @@ public struct TriggerEventStruct
     public bool DontUseBlackEffect;
     public string sfxID;
     public bool enableAmbient;
+    public float enterDialgueDelay;
 }
 
 [System.Serializable]

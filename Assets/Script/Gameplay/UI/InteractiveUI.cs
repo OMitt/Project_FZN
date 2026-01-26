@@ -83,7 +83,7 @@ public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                     SceneSystemManager.Instance.EnterTriggerScene(triggerEventStruct.targetSceneID,triggerEventStruct.DontUseBlackEffect);
                     break;
                 case TriggerEventType.TriggerDialogue:
-                    DialogueSystem.Instance.EnterNewDialgue(triggerEventStruct.targetDialogue);
+                    DialogueSystem.Instance.EnterNewDialgue(triggerEventStruct.targetDialogue,triggerEventStruct.enterDialgueDelay);
                     break;
                 case TriggerEventType.SwitchSelection:
                     ConclusionManager.Instance.SwitchConclusion(triggerEventStruct.enableSelection, triggerEventStruct.selections);

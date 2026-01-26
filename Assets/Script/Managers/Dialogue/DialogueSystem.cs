@@ -44,6 +44,9 @@ public class DialogueSystem : Singleton<DialogueSystem>
     private Coroutine typingCoroutine;
     private bool CanClick = true;
 
+    [SerializeField]
+    private GameObject forbidInputBox;
+
     protected override void Awake()
     {
         base.Awake();
@@ -53,13 +56,20 @@ public class DialogueSystem : Singleton<DialogueSystem>
     public void SetUp()
     {
         dialogueIndex = 0;
+        SwitchForbidInputBox(false);
         SwitchChatbox(false);
+        SwitchCanClick(false);
+    }
+
+    private void SwitchForbidInputBox(bool enable)
+    {
+        forbidInputBox.SetActive(enable);
+        graphicraycaster.enabled = enable;
     }
 
     private void SwitchChatbox(bool enable)
     {
         chatbox.SetActive(enable);
-        graphicraycaster.enabled = enable;
     }
 
     public void SwitchCanClick(bool enable)
@@ -85,12 +95,24 @@ public class DialogueSystem : Singleton<DialogueSystem>
         }
     }
 
-    public void EnterNewDialgue(DialogueGroup newDialogue)
+    public void EnterNewDialgue(DialogueGroup newDialogue, float enterDelay = 0.0f)
     {
-        SwitchChatbox(true);
-        dialogueIndex = 0;
-        currentDialogue = newDialogue;
-        ShowDialogue();
+        Sequence seq = DOTween.Sequence();
+
+        seq.AppendCallback(()=>{
+            dialogueIndex = 0;
+            currentDialogue = newDialogue;
+            SwitchForbidInputBox(true);
+            SwitchCanClick(false);});
+
+        seq.AppendInterval(enterDelay);
+
+        seq.AppendCallback(()=>{        
+            SwitchChatbox(true);
+            SwitchCanClick(true);
+            ShowDialogue();});   
+        
+        seq.Play();
     }
     private void NextDialogue()
     {
@@ -104,7 +126,9 @@ public class DialogueSystem : Singleton<DialogueSystem>
             }
             else
             {
+                SwitchForbidInputBox(false);
                 SwitchChatbox(false);
+                SwitchCanClick(false);
                 CompleteEvent();
             }
         }

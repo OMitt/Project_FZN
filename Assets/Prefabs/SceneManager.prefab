@@ -320,6 +320,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: OpenDoor_0
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 1
     nextChapterID: 1_0
     enableReport: 0
@@ -337,6 +338,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &6590859788092057060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,6 +461,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -476,6 +479,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &4483311910038829529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,6 +827,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &6100438156248797136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1158,7 @@ MonoBehaviour:
         DontUseBlackEffect: 0
         sfxID: 
         enableAmbient: 0
+        enterDialgueDelay: 0
       - triggerEventType: 5
         nextChapterID: 
         enableReport: 0
@@ -1170,6 +1176,7 @@ MonoBehaviour:
         DontUseBlackEffect: 0
         sfxID: 
         enableAmbient: 0
+        enterDialgueDelay: 0
   - id: Inside_Ch1_1
     scene: {fileID: 480811591347634350}
     portalAndEffects:
@@ -1192,6 +1199,7 @@ MonoBehaviour:
         DontUseBlackEffect: 0
         sfxID: 
         enableAmbient: 0
+        enterDialgueDelay: 0
   - id: Inside_Ch1_0_2
     scene: {fileID: 7279698621590260682}
     portalAndEffects:
@@ -1214,6 +1222,7 @@ MonoBehaviour:
         DontUseBlackEffect: 0
         sfxID: 
         enableAmbient: 0
+        enterDialgueDelay: 0
   - id: BadEnd
     scene: {fileID: 6156159408492287323}
     portalAndEffects: []
@@ -1506,6 +1515,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -1523,6 +1533,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5373189380006197141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,6 +1923,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &2769250071560714222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1961,7 +1973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.80600005}
   m_AnchorMax: {x: 0.5, y: 0.8551478}
-  m_AnchoredPosition: {x: 0, y: -357.5}
+  m_AnchoredPosition: {x: 0, y: -357.50012}
   m_SizeDelta: {x: 776, y: 1027}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4966799802044543353
@@ -2172,6 +2184,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &4466708677527338589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2295,6 +2308,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &4724479551888404306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,6 +2467,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 1.2
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -2470,6 +2485,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 9
     nextChapterID: 
     enableReport: 0
@@ -2487,6 +2503,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 19
     nextChapterID: 
     enableReport: 0
@@ -2504,6 +2521,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: Body_0
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &3232185310701902908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2939,6 +2957,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 1.2
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -2956,6 +2975,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 9
     nextChapterID: 
     enableReport: 0
@@ -2973,6 +2993,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 19
     nextChapterID: 
     enableReport: 0
@@ -2990,6 +3011,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: Body_1
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &2140942100276067525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3599,6 +3621,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -3616,6 +3639,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &3347032050527292976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,6 +3867,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -3860,6 +3885,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &6306692985203616543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4091,7 +4117,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -426, y: 54}
+  m_AnchoredPosition: {x: -160, y: 54}
   m_SizeDelta: {x: 354, y: 89}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &353651943653562578
@@ -4162,6 +4188,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &7901817239427728801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4284,6 +4311,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &556327797990351059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4482,6 +4510,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5658964137968889483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4604,6 +4633,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -4621,6 +4651,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &7549786906367795917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +4964,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5060648424259622269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5055,6 +5087,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -5072,6 +5105,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &7176413829192634456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5126,7 +5160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -574.9, y: -0.090026855}
+  m_AnchoredPosition: {x: -574.9, y: -0.09008789}
   m_SizeDelta: {x: 562, y: 945}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &8169246683211440862
@@ -5274,6 +5308,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -5291,6 +5326,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5141457205756467531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5493,6 +5529,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 1.2
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -5510,6 +5547,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 9
     nextChapterID: 
     enableReport: 0
@@ -5527,6 +5565,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 19
     nextChapterID: 
     enableReport: 0
@@ -5544,6 +5583,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: Body_0
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &3658710767798516479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5666,6 +5706,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 1.2
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -5683,6 +5724,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 9
     nextChapterID: 
     enableReport: 0
@@ -5700,6 +5742,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 19
     nextChapterID: 
     enableReport: 0
@@ -5717,6 +5760,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: Body_1
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &2947393264580978964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5878,6 +5922,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 8
     nextChapterID: 
     enableReport: 0
@@ -5895,6 +5940,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5290075425643623554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6017,6 +6063,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
 --- !u!114 &5350657392536191713
 MonoBehaviour:
   m_ObjectHideFlags: 0
