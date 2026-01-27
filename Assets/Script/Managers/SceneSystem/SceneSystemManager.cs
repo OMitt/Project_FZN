@@ -223,7 +223,7 @@ public class SceneSystemManager : Singleton<SceneSystemManager>
         }
     }
 
-    public void SwitchClueState(string id, bool enable)
+    public void SwitchClueState(string id, bool enable, bool mustHide)
     {
         foreach(var clue in unlockableClues)
         {
@@ -240,6 +240,11 @@ public class SceneSystemManager : Singleton<SceneSystemManager>
                     {
                         interactiveUI.enabled = enable;
                     }
+                }
+
+                if(mustHide)
+                {
+                    clue.clue.gameObject.SetActive(false);
                 }
             }
         }

@@ -112,7 +112,7 @@ public class UnlockManager : Singleton<UnlockManager>
                         ReportManager.Instance.SwitchConclusionBtn(triggerEventStruct.enableConclusion);
                         break;
                     case TriggerEventType.SwitchClue:
-                        SceneSystemManager.Instance.SwitchClueState(triggerEventStruct.unlockConditionID,triggerEventStruct.enableConclusion);
+                        SceneSystemManager.Instance.SwitchClueState(triggerEventStruct.unlockConditionID,triggerEventStruct.enableConclusion,triggerEventStruct.enableSelection);
                         break;
                 }
             }

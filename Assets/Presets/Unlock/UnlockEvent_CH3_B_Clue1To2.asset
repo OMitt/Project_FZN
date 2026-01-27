@@ -20,7 +20,7 @@ MonoBehaviour:
   - triggerEventType: 17
     nextChapterID: 
     enableReport: 0
-    enableSelection: 0
+    enableSelection: 1
     selections: {fileID: 0}
     targetSceneID: 
     targetDialogue: {fileID: 0}
@@ -34,6 +34,7 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   - triggerEventType: 17
     nextChapterID: 
     enableReport: 0
@@ -51,4 +52,5 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
   isUnlocked: 0

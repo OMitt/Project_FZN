@@ -233,6 +233,9 @@ public class DialogueSystem : Singleton<DialogueSystem>
                 case TriggerEventType.SwitchAmbient:
                     SoundManager.Instance.SwitchAmbient(triggerEvent.sfxID,triggerEvent.enableAmbient);
                     break;
+                case TriggerEventType.SwitchClue:
+                    SceneSystemManager.Instance.SwitchClueState(triggerEvent.unlockConditionID,triggerEvent.enableConclusion,triggerEvent.enableSelection);
+                    break;
             } 
         }
     }

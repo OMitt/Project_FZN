@@ -46,6 +46,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     - triggerEventType: 9
       nextChapterID: 
       enableReport: 0
@@ -63,6 +64,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     - triggerEventType: 19
       nextChapterID: 
       enableReport: 0
@@ -80,6 +82,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: Body_0
       enableAmbient: 0
+      enterDialgueDelay: 0
     sounds: []
   - speaker: 0
     text: "It\u2019s over."
@@ -95,7 +98,25 @@ MonoBehaviour:
     sounds: []
   - speaker: 0
     text: "You burn the assistant\u2019s body."
-    triggerEvents: []
+    triggerEvents:
+    - triggerEventType: 17
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 1
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: C3_B_2
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+      enterDialgueDelay: 0
     sounds: []
   - speaker: 0
     text: You escape from the morgue.
@@ -117,6 +138,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     - triggerEventType: 10
       nextChapterID: 
       enableReport: 0
@@ -134,6 +156,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     - triggerEventType: 13
       nextChapterID: 
       enableReport: 0
@@ -151,6 +174,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     - triggerEventType: 13
       nextChapterID: 
       enableReport: 0
@@ -168,6 +192,7 @@ MonoBehaviour:
       DontUseBlackEffect: 0
       sfxID: 
       enableAmbient: 0
+      enterDialgueDelay: 0
     sounds: []
   - speaker: 1
     text: "\u201C...........\u201D"
@@ -215,3 +240,4 @@ MonoBehaviour:
     DontUseBlackEffect: 0
     sfxID: 
     enableAmbient: 0
+    enterDialgueDelay: 0
