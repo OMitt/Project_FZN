@@ -46,6 +46,8 @@ public class DialogueSystem : Singleton<DialogueSystem>
 
     [SerializeField]
     private GameObject forbidInputBox;
+    [SerializeField]
+    private float additionEnterDelay = 0.06f;
 
     protected override void Awake()
     {
@@ -105,7 +107,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
             SwitchForbidInputBox(true);
             SwitchCanClick(false);});
 
-        seq.AppendInterval(enterDelay);
+        seq.AppendInterval(enterDelay+additionEnterDelay);
 
         seq.AppendCallback(()=>{        
             SwitchChatbox(true);
