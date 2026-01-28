@@ -16,6 +16,6 @@ public class Chapter_2_0 : GameChapter
         DialogueSystem.Instance.EnterNewDialgue(StartDialogue);
 
         ConclusionManager.Instance.CurrentSelection = ThisChaptersConclusion;
-        ReportManager.Instance.SwitchConclusionBtn(true);
+        ReportManager.Instance.SwitchConclusionBtn(false);
     }
 }

@@ -13,8 +13,6 @@ public class DialogueSystem : Singleton<DialogueSystem>
     [SerializeField]
     private Transform blackGound;
     [SerializeField]
-    private GraphicRaycaster graphicraycaster;
-    [SerializeField]
     private GameObject chatbox;
     [SerializeField]
     private TMP_Text T_Speaker;
@@ -25,7 +23,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
 
     [Header("Typing Settings")]
     [SerializeField]
-    private float typeSpeed = 0.03f;
+    private float typeSpeed = 1f;
 
     [Header("Speaker Portraits")]
     [SerializeField]
@@ -48,7 +46,6 @@ public class DialogueSystem : Singleton<DialogueSystem>
     private GameObject forbidInputBox;
     [SerializeField]
     private float additionEnterDelay = 0.06f;
-
     protected override void Awake()
     {
         base.Awake();
@@ -66,7 +63,6 @@ public class DialogueSystem : Singleton<DialogueSystem>
     private void SwitchForbidInputBox(bool enable)
     {
         forbidInputBox.SetActive(enable);
-        graphicraycaster.enabled = enable;
     }
 
     private void SwitchChatbox(bool enable)
@@ -81,7 +77,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
 
     private void Update()
     {
-        if (CanClick && graphicraycaster.enabled && Input.GetMouseButtonDown(0))
+        if (CanClick &&  Input.GetMouseButtonDown(0))
         {
             if (isTyping)
             {
@@ -178,9 +174,20 @@ public class DialogueSystem : Singleton<DialogueSystem>
             canContinue = false;
             T_Content.text = "";
 
-            foreach (char c in text)
+            for (int i = 0; i < text.Length; i++)
             {
-                T_Content.text += c;
+                if (text[i] == '<')
+                {
+                    int tagEnd = text.IndexOf('>', i);
+                    if (tagEnd != -1)
+                    {
+                        T_Content.text += text.Substring(i, tagEnd - i + 1);
+                        i = tagEnd;
+                        continue;
+                    }
+                }
+
+                T_Content.text += text[i];
                 yield return new WaitForSeconds(typeSpeed);
             }
 
@@ -193,7 +200,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
             foreach (var s in sounds)
             {
                 yield return new WaitForSeconds(s.delay);
-                //����һ��audiosource������Ϻ��Զ�ɾ����
+
             }
         }
     }
@@ -235,6 +242,10 @@ public class DialogueSystem : Singleton<DialogueSystem>
                     break;
                 case TriggerEventType.SwitchClue:
                     SceneSystemManager.Instance.SwitchClueState(triggerEvent.unlockConditionID,triggerEvent.enableConclusion,triggerEvent.enableSelection);
+                    break;
+
+                case TriggerEventType.SwitchConclusionBtn:
+                    ReportManager.Instance.SwitchConclusionBtn(triggerEvent.enableConclusion);
                     break;
             } 
         }

@@ -34,3 +34,6 @@ MonoBehaviour:
     targetLevelIndex: 0
     targetSprite: {fileID: 0}
     DontUseBlackEffect: 0
+    sfxID: 
+    enableAmbient: 0
+    enterDialgueDelay: 0
