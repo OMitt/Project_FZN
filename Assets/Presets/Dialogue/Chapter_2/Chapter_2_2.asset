@@ -37,6 +37,24 @@ MonoBehaviour:
     sounds: []
   - speaker: 0
     text: You received a <color=red>scalpel</color>.
-    triggerEvents: []
+    triggerEvents:
+    - triggerEventType: 10
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 1
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+      enterDialgueDelay: 0
     sounds: []
   triggerEventStructs: []
