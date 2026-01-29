@@ -16,7 +16,10 @@ public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         outlineDistance.x = outlineDistance.x/this.transform.localScale.x;
         outlineDistance.y = outlineDistance.y/this.transform.localScale.y;
-
+        if (this.gameObject.TryGetComponent<Image>(out Image image))
+        {
+            imageNormalColor = image.color;
+        }
         Outline outlineComp = null;
         if(this.gameObject.TryGetComponent<Outline>(out outlineComp))
         {

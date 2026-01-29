@@ -46,6 +46,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
     private GameObject forbidInputBox;
     [SerializeField]
     private float additionEnterDelay = 0.06f;
+    private bool canClickOnDialogue = true;
     protected override void Awake()
     {
         base.Awake();
@@ -63,6 +64,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
     private void SwitchForbidInputBox(bool enable)
     {
         forbidInputBox.SetActive(enable);
+        canClickOnDialogue = enable;
     }
 
     private void SwitchChatbox(bool enable)
@@ -77,7 +79,7 @@ public class DialogueSystem : Singleton<DialogueSystem>
 
     private void Update()
     {
-        if (CanClick &&  Input.GetMouseButtonDown(0))
+        if (CanClick && canClickOnDialogue && Input.GetMouseButtonDown(0))
         {
             if (isTyping)
             {
