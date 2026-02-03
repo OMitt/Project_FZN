@@ -101,8 +101,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.57132, y: 0.57132, z: 0.57132}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3746673691973133681}
+  m_Children: []
   m_Father: {fileID: 6014558602333739438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -323,15 +322,15 @@ RectTransform:
   m_GameObject: {fileID: 2443559111358382028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.7503327, y: 1.7503327, z: 1.7503327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2866819764987619461}
+  m_Father: {fileID: 6014558602333739438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.004699707, y: 0}
-  m_SizeDelta: {x: -409.81, y: -812.4}
+  m_AnchoredPosition: {x: -1061.9971, y: -540}
+  m_SizeDelta: {x: -1373.8099, y: -936.4}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &2917805679452420882
 CanvasRenderer:
@@ -625,15 +624,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem
   blackGound: {fileID: 0}
-  graphicraycaster: {fileID: 8425157814926332093}
   chatbox: {fileID: 3733965490597643435}
   T_Speaker: {fileID: 2487662658624436878}
   T_Content: {fileID: 9180007535526995357}
   portrait: {fileID: 6560997455097163848}
   typeSpeed: 0.005
   narratorPortrait: {fileID: -4320984126327472812, guid: 7c27bea5101453846b005e58ae38d5bf, type: 3}
-  youPortrait: {fileID: -7854551316141353551, guid: cd9f0eda6488ea04eb337008f50d2f24, type: 3}
-  assistantPortrait: {fileID: 2798852027769772122, guid: 302fd0b5cfeacfe4c8583b1ddd76fe4a, type: 3}
+  youPortrait:
+  - {fileID: -7854551316141353551, guid: cd9f0eda6488ea04eb337008f50d2f24, type: 3}
+  - {fileID: -7854551316141353551, guid: e8bacf81451a58a4e965e28b5d669789, type: 3}
+  assistantPortrait:
+  - {fileID: 2798852027769772122, guid: 302fd0b5cfeacfe4c8583b1ddd76fe4a, type: 3}
+  - {fileID: 2798852027769772122, guid: 94418dd1df9030249863b4bd0644cd67, type: 3}
   broadcastPortrait: {fileID: 4219788010747289006, guid: ccb28d0c844202045a892d38f4ffc51e, type: 3}
   forbidInputBox: {fileID: 2941028323801647022}
   additionEnterDelay: 0.16
@@ -682,6 +684,7 @@ RectTransform:
   - {fileID: 8565427527332313384}
   - {fileID: 1254866705657497396}
   - {fileID: 2866819764987619461}
+  - {fileID: 3746673691973133681}
   m_Father: {fileID: 8298701649628658546}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

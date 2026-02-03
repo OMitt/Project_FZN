@@ -21,6 +21,7 @@ public class GameLoopManager : Singleton<GameLoopManager>
 
     void Start()
     {
+        InteractiveUI.clickChirsCount = 0;
         EnterTriggerChapter(startChapterID);
     }
 

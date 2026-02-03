@@ -302,6 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 19
     nextChapterID: 
@@ -443,6 +445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -809,6 +813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -1497,6 +1503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -1903,6 +1911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -2164,6 +2174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -2288,6 +2300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 18
     nextChapterID: 
@@ -2447,6 +2461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -2937,6 +2953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -3201,8 +3219,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1195356163748813139}
   - {fileID: 6680050173933571637}
+  - {fileID: 1195356163748813139}
   - {fileID: 8700625160941483368}
   - {fileID: 8198785633084173613}
   m_Father: {fileID: 1710952061659940278}
@@ -3526,6 +3544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -3667,6 +3687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs: []
 --- !u!114 &4298152603153191934
 MonoBehaviour:
@@ -3772,6 +3794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -3913,6 +3937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs: []
 --- !u!114 &8911102321812167234
 MonoBehaviour:
@@ -4018,6 +4044,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -4141,6 +4169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -4340,6 +4370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 15
     nextChapterID: 
@@ -4463,6 +4495,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -4794,6 +4828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -4917,6 +4953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -5138,6 +5176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -5359,6 +5399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -5536,6 +5578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -5752,6 +5796,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 
@@ -5893,6 +5939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 1, g: 0.2705882, b: 0, a: 1}
+  imageHighLightColor: {r: 0.8039216, g: 0.3607843, b: 0.3607843, a: 1}
   triggerEventStructs:
   - triggerEventType: 5
     nextChapterID: 

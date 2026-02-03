@@ -9,6 +9,7 @@ public class Chapter_1_0 : GameChapter
     {
         Sequence seq = DOTween.Sequence();
 
+        SoundManager.Instance.PlayDialogueSFX("EnterDoor");
         seq.AppendCallback(()=>{SceneSystemManager.Instance.EnterTriggerScene("InsideDark");});   
         seq.AppendInterval(ScreenVisualManager.Instance.SceneChangeDelayTime);
         seq.AppendCallback(()=>{DialogueSystem.Instance.EnterNewDialgue(StartDialogue);});   

@@ -21,17 +21,28 @@ public class SoundManager : Singleton<SoundManager>
     private AudioSource dialogueSfxAudioSource;
 
     [SerializeField]
+    private AudioSource clickingSource;
+
+    [SerializeField]
     private List<AudioResourceAndID> bgmResoures;
     [SerializeField]
     private List<AudioResourceAndID> sfxResources;
     [SerializeField]
     private List<AudioResourceAndID> ambientResources;
+    [SerializeField]
+    private List<AudioClip> mouseSource;
 
     protected override void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
 
         base.Awake();
+    }
+
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+            PlayClick(0);
     }
 
     [SerializeField]
@@ -102,6 +113,13 @@ public class SoundManager : Singleton<SoundManager>
             dialogueSfxAudioSource.resource = temp;
             dialogueSfxAudioSource.Play();
         }
+    }
+    public void PlayClick(int index)
+    {
+        Debug.Log("!");
+        clickingSource.Stop();
+        clickingSource.resource = mouseSource[index];
+        clickingSource.Play();
     }
 
     private AudioResource FindResourceByIDInAssignedList(List<AudioResourceAndID> targetlist, string targetid)

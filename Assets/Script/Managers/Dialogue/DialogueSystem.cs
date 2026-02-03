@@ -29,11 +29,13 @@ public class DialogueSystem : Singleton<DialogueSystem>
     [SerializeField]
     private Sprite narratorPortrait;
     [SerializeField]
-    private Sprite youPortrait;
+    private Sprite[] youPortrait;
     [SerializeField]
-    private Sprite assistantPortrait;
+    private Sprite[] assistantPortrait;
     [SerializeField]
     private Sprite broadcastPortrait;
+    Coroutine blinkRoutine;
+    Speaker currentSpeaker;
 
     private DialogueGroup currentDialogue;
     private int dialogueIndex;
@@ -147,10 +149,64 @@ public class DialogueSystem : Singleton<DialogueSystem>
         Dialogue dialogue = currentDialogue.dialogues[dialogueIndex];
 
         T_Speaker.text = dialogue.speaker.ToString();
-        portrait.sprite = GetPortrait(dialogue.speaker);
+        SetPortrait(dialogue.speaker);
 
-        //visual trigger switch image here.
+        Sprite GetPortrait(Speaker s, int index)
+        {
+            switch (s)
+            {
+                case Speaker.John:
+                    return youPortrait.Length > index ? youPortrait[index] : youPortrait[0];
 
+                case Speaker.Christina:
+                    return assistantPortrait.Length > index ? assistantPortrait[index] : assistantPortrait[0];
+
+                case Speaker.Broadcast:
+                    return broadcastPortrait;
+
+                case Speaker.Narrator:
+                default:
+                    return narratorPortrait;
+            }
+        }
+        void SetPortrait(Speaker speaker)
+        {
+            currentSpeaker = speaker;
+            if (blinkRoutine != null)
+            {
+                StopCoroutine(blinkRoutine);
+                blinkRoutine = null;
+            }
+            portrait.sprite = GetPortrait(speaker, 0);
+            if (HasBlink(speaker))
+            {
+                blinkRoutine = StartCoroutine(BlinkCoroutine(speaker));
+            }
+        }
+        IEnumerator BlinkCoroutine(Speaker speaker)
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(1f);
+
+                // 防止切人后误触发
+                if (speaker != currentSpeaker)
+                    yield break;
+
+                // 切到眨眼
+                portrait.sprite = GetPortrait(speaker, 1);
+                yield return new WaitForSeconds(0.12f);
+
+                // 切回正常
+                portrait.sprite = GetPortrait(speaker, 0);
+                yield return new WaitForSeconds(1f);
+            }
+        }
+        bool HasBlink(Speaker s)
+        {
+            return (s == Speaker.John && youPortrait.Length > 1)
+                || (s == Speaker.Christina && assistantPortrait.Length > 1);
+        }
         HandleTrigger(dialogue.triggerEvents);
         SoundManager.Instance.PlayDialogueSFX("TextScrolling_0");
         StartCoroutine(PlayDialogueSounds(dialogue.sounds));
@@ -158,17 +214,6 @@ public class DialogueSystem : Singleton<DialogueSystem>
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
         typingCoroutine = StartCoroutine(TypeText(dialogue.text));
 
-        Sprite GetPortrait(Speaker s)
-        {
-            switch (s)
-            {
-                case Speaker.John: return youPortrait;
-                case Speaker.Christina: return assistantPortrait;
-                case Speaker.Broadcast: return broadcastPortrait;
-                case Speaker.Narrator:
-                default: return narratorPortrait;
-            }
-        }
 
         IEnumerator TypeText(string text)
         {
@@ -248,6 +293,10 @@ public class DialogueSystem : Singleton<DialogueSystem>
 
                 case TriggerEventType.SwitchConclusionBtn:
                     ReportManager.Instance.SwitchConclusionBtn(triggerEvent.enableConclusion);
+                    break;
+
+                case TriggerEventType.Backup:
+                    GameObject.FindGameObjectWithTag("Trigger01").GetComponent<Animator>().enabled = true;
                     break;
             } 
         }

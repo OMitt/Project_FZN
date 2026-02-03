@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6852991925923237273}
   - component: {fileID: 5225009352924617539}
   - component: {fileID: 3090814773609969048}
+  - component: {fileID: 3290452067162558954}
   m_Layer: 5
   m_Name: Selection
   m_TagString: Untagged
@@ -27,7 +28,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5893520600404728444}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -38,7 +39,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 120}
+  m_SizeDelta: {x: 1000, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &912077069036098441
 CanvasRenderer:
@@ -90,6 +91,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa5aee87dae78b41a5c4f7172c0173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveUI
+  outlineColor: {r: 0.9137255, g: 0.23529412, b: 0.23529412, a: 0.65882355}
+  imageHighLightColor: {r: 0.9137255, g: 0.23529412, b: 0.23529412, a: 0.25882354}
   triggerEventStructs: []
 --- !u!114 &3090814773609969048
 MonoBehaviour:
@@ -103,9 +106,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
-  m_EffectColor: {r: 1, g: 0.5212681, b: 0, a: 0.5}
+  m_EffectColor: {r: 1, g: 0, b: 0, a: 0.08235294}
   m_EffectDistance: {x: 6, y: -6}
   m_UseGraphicAlpha: 1
+--- !u!114 &3290452067162558954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5893520600404728444}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d3d49a74c50324aa2e3178cad002d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeirdMoving
+  trans: {fileID: 3009176514126039180}
+  amplitude: 1
+  frequency: 4
 --- !u!1 &7807807044970938347
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +135,7 @@ GameObject:
   - component: {fileID: 3009176514126039180}
   - component: {fileID: 2141110385028678519}
   - component: {fileID: 2884148194360957476}
+  - component: {fileID: 7546273511141667998}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -138,10 +157,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5284476712062816442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.9}
+  m_SizeDelta: {x: 1000, y: 61.550003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2141110385028678519
 CanvasRenderer:
@@ -173,8 +192,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Selection
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cb926ecebfdc88d43830b11cecc826b7, type: 2}
-  m_sharedMaterial: {fileID: 9086416325364154750, guid: cb926ecebfdc88d43830b11cecc826b7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 91a5d56bc64a8494b9255c78b70d3ed2, type: 2}
+  m_sharedMaterial: {fileID: 2798958388490055843, guid: 91a5d56bc64a8494b9255c78b70d3ed2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -204,7 +223,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 3
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -242,3 +261,25 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &7546273511141667998
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7807807044970938347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab029bc568f92b14e9ad78d70056801d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -52,9 +52,9 @@ public class ScreenVisualManager : Singleton<ScreenVisualManager>
 
             float tempValue = 0.0f;
 
-
+            Debug.Log(VFX.ToString());
             switch (VFX)
-            {
+            {      
                 case SceneVisualEffectType.Flash:
 
                     tempValue = startValue;

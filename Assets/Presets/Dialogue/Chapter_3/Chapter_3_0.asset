@@ -23,40 +23,49 @@ MonoBehaviour:
     triggerEvents: []
     sounds: []
   - speaker: 2
-    text: "\u201CThat was terrifying \u2014 where did you go when the power went
-      out?\u201D"
-    triggerEvents: []
-    sounds: []
-  - speaker: 0
-    text: She looks a little angry.
+    text: "\u201CThat was terrifying\u2026 where did you go when the power went out?\u201D"
     triggerEvents: []
     sounds: []
   - speaker: 2
-    text: "\u201CI nearly thought I was a goner.\u201D"
+    text: Christina looks genuinely rattled.
     triggerEvents: []
     sounds: []
   - speaker: 1
-    text: "\u201CUh... sorry.\u201D"
+    text: "\u201CI was in the other corner. Guess we\u2019re lucky to still be alive.\u201D"
+    triggerEvents: []
+    sounds: []
+  - speaker: 2
+    text: "\u201CYeah\u2026 fine.\u201D"
     triggerEvents: []
     sounds: []
   - speaker: 1
-    text: "\u201CI backed into the corner.\u201D"
+    text: "\u201CAre you still able to assist?\u201D"
     triggerEvents: []
     sounds: []
   - speaker: 2
-    text: "\u201C...Alright, what do we do now?\u201D"
-    triggerEvents: []
+    text: "\u201CI\u2019m not taking another step closer.\u201D"
+    triggerEvents:
+    - triggerEventType: 22
+      nextChapterID: 
+      enableReport: 0
+      enableSelection: 0
+      selections: {fileID: 0}
+      targetSceneID: 
+      targetDialogue: {fileID: 0}
+      VFXs: 
+      enablePortals: 0
+      unlockEventID: 
+      unlockConditionID: 
+      enableConclusion: 0
+      targetLevelIndex: 0
+      targetSprite: {fileID: 0}
+      DontUseBlackEffect: 0
+      sfxID: 
+      enableAmbient: 0
+      enterDialgueDelay: 0
     sounds: []
   - speaker: 2
-    text: "\u201CCan you separate them?\u201D"
-    triggerEvents: []
-    sounds: []
-  - speaker: 1
-    text: "\u201CI have no idea.\u201D"
-    triggerEvents: []
-    sounds: []
-  - speaker: 2
-    text: "\u201CThen you know what to do.\u201D"
+    text: "\u201CBurn this thing to the ground. Then we leave.\u201D"
     triggerEvents: []
     sounds: []
   triggerEventStructs: []

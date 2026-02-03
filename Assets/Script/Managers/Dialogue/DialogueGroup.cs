@@ -18,7 +18,8 @@ public enum TriggerEventType
     TriggerUnlock = 8, TryTriggerUnlockEffect = 9, SwitchConclusionBtn = 10,
     SetCurrentConclusionSelection = 11, SwitchConclusionSelection = 12,
     SwitchReportBtn = 13, OpenLevel = 14, QuitGame = 15, ChangeSceneBG = 16,
-    SwitchClue = 17, EnterSavePointChapter = 18, PlaySFX = 19, SwitchAmbient = 20
+    SwitchClue = 17, EnterSavePointChapter = 18, PlaySFX = 19, SwitchAmbient = 20, EnterCredit = 21,
+    Backup = 22,
 }
 
 [System.Serializable]

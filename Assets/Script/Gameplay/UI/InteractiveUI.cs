@@ -7,10 +7,14 @@ using UnityEngine.UI;
 
 public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    private Vector2 outlineDistance = new Vector2(8,-8);
-    private Color outlineColor = Color.orangeRed;
+    private Vector2 outlineDistance = new Vector2(8, -8);
+    [SerializeField] private Color outlineColor = Color.orangeRed;
     private Color imageNormalColor = Color.white;
-    private Color imageHighLightColor = Color.indianRed;
+    [SerializeField] Color imageHighLightColor = Color.indianRed;
+
+    public bool isChrisDialgue = false;
+    public static int clickChirsCount = 0;
+    public List<DialogueGroup> group;
 
     void Setup()
     {
@@ -37,6 +41,7 @@ public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
+        SoundManager.Instance.PlayClick(1);
         EnableOutlineComp(true);
         EnableImageHighlight(true);
     }
@@ -69,6 +74,14 @@ public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         EnableOutlineComp(false);
         EnableImageHighlight(false);
+
+        if (isChrisDialgue)
+        {
+            clickChirsCount++;
+            var dialgue = group[Mathf.Min(clickChirsCount, group.Count-1)];
+            DialogueSystem.Instance.EnterNewDialgue(dialgue, 0.1f);
+            return;
+        }
 
         foreach(var triggerEventStruct in triggerEventStructs)
         {
@@ -119,6 +132,10 @@ public class InteractiveUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                     break;
                 case TriggerEventType.PlaySFX:
                     SoundManager.Instance.PlaySFX(triggerEventStruct.sfxID);
+                    break;
+
+                case TriggerEventType.EnterCredit:
+                    CreditScene.Instance.EnterCredit();
                     break;
             } 
         }

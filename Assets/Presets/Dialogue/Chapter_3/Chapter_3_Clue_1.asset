@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueGroup
   nextDialogue: {fileID: 0}
   dialogues:
-  - speaker: 0
-    text: The assistant looks at you with a puzzled expression.
+  - speaker: 2
+    text: "\u201CPlease, let this end quickly.\u201D"
     triggerEvents: []
     sounds: []
   triggerEventStructs: []

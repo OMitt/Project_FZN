@@ -53,7 +53,12 @@ public class ConclusionManager : Singleton<ConclusionManager>
         {
             foreach (var selection in targetSelectionGroup.selections)
             {
-                GameObject sel = Instantiate(selectionPrefab, Vector3.zero, Quaternion.identity, conclusionList);
+                GameObject sel = Instantiate(selectionPrefab);
+                sel.transform.SetParent(conclusionList, false);
+                sel.transform.localScale = Vector3.one;
+                RectTransform rt = sel.GetComponent<RectTransform>();
+                rt.anchoredPosition = Vector2.zero;
+
                 if (sel.TryGetComponent<InteractiveUI>(out InteractiveUI ui))
                 {
                     ui.triggerEventStructs = selection.triggerEventStructs;
