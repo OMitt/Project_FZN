@@ -15,7 +15,7 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogues:
   - speaker: 2
-    text: "\u201CWhy am i even here......\u201D"
+    text: "\u201CWhy am I even here......\u201D"
     triggerEvents: []
     sounds: []
   triggerEventStructs: []
