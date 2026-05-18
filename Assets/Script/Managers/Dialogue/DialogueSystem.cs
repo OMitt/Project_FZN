@@ -176,18 +176,24 @@ public class DialogueSystem : Singleton<DialogueSystem>
         {
             isTyping = true;
             canContinue = false;
-            T_Content.text = "";
 
-            foreach (char c in text)
+            T_Content.text = text;
+            T_Content.maxVisibleCharacters = 0;
+
+            // 让 TMP 先计算完整文本的排版与换行
+            T_Content.ForceMeshUpdate();
+
+            int totalVisible = T_Content.textInfo.characterCount;
+
+            for (int i = 0; i <= totalVisible; i++)
             {
-                T_Content.text += c;
+                T_Content.maxVisibleCharacters = i;
                 yield return new WaitForSeconds(typeSpeed);
             }
 
             isTyping = false;
             canContinue = true;
         }
-
         IEnumerator PlayDialogueSounds(List<DialogueSound> sounds)
         {
             foreach (var s in sounds)
